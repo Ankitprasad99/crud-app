@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <title>Register Here</title>
+        
+    </head>
+    <body>
+            <form method="post" >
+                <table align="center" width="400px" height=300px >
+                    <tr> 
+                        <td> Name</td>
+                        <td><input type="text" name="name" id="name" required pattern="/^[a-zA-Z ]{2,30}$/;"/></td>
+                    </tr>
+                    <tr>
+                        <td> Email</td>
+                        <td> <input type="text" name="email" id="email" required/> </td>
+                    </tr>
+                    <tr>
+                        <td> Password</td>
+                        <td> <input type="password" name="password" id="password" required/> </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td> <input type="radio" name="gender" required/>M <input type="radio" name="gender" required/>F </td>
+                    </tr>
+                    <tr>
+                        <td> Course</td>
+                        <td><input type="checkbox" name="c"/>C
+                        <input type="checkbox" name="java" />JAVA
+                        <input type="checkbox" name="python" />PYTHON</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td><input type="checkbox" name="js"  />JS
+                            <input type="checkbox" name="mysql" />MYSQL
+                            <input type="checkbox" name="ml" />ML</td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><select id="city">
+                            <option>Delhi</option>
+                            <option>Mumbai</option>
+                            <option>Kolkata</option>
+                            <option>Chennai</option>
+                            <option>Banglore</option>
+                            <option>Hydrabad</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <input type="button" onclick="validate()"  value="Register"/>
+                             <input type="reset" value="reset"/></td>
+                    </tr>
+
+                </table>
+            </form>
+            <table id="show"  border="4px" width="500px">
+                <tr>
+                    <th> Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                
+                    
+                </tr>
+                <tbody id="table-row">
+                   
+                </tbody>
+               
+                
+            </table>
+            
+
+            <div id="btns"></div>
+
+    </body>
+    <script src="app.js"></script>
+</html>
+
